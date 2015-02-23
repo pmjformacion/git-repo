@@ -1,3 +1,5 @@
 1. - Implement Multiplication
 
 2. - Implement Division
+
+3. - Review for release 0.1

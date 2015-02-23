@@ -83,3 +83,14 @@ double Suma (double a, double b)
      c = a + b;
      return (c); //así asignamos a la variable Suma, el valor de c=a+b
 }
+
+double Multiplicacion (double a, double b)
+{
+	 double c;
+    printf("\n introduzca el primer multiplicando:");
+    scanf("%lf", &a);
+    printf("\n introduzca el multiplicador:");
+    scanf("%lf", &b);
+    c = a * b;
+    return (c);
+}
