@@ -3,13 +3,13 @@ Calculadora.c
 -------------
 
 Autores: Mois‚s Seisdedos y Samuel Seisdedos
-Descripci¢n: Es una calculadora q calcula Suma, Resta, Multiplicaci¢n,
-Divis¡on y Raiz Cuadrada, todas las funciones con opci¢n de usar decimales.
+Descripción: Es una calculadora q calcula Suma, Resta, Multiplicación,
+Divis¡on y Raiz Cuadrada, todas las funciones con opción de usar decimales.
 
 Este fichero ha sido descargado desde:
 http://www.elrincondelc.com
 
-El Rinc¢n del C - Cusos de programaci¢n, c¢digo fuente, informaci¢n
+El Rincón del C - Cusos de programación, código fuente, información
 sobre compiladores, art¡culos, listas de correo para consultas,...
 */
 
@@ -28,13 +28,14 @@ int main()
 
 
 	double Suma (double , double );
-
+	double Multiplicacion (double , double );
 
     clrscr();
 	printf("\t\tCALCULADORA\n\n");
 	printf("\t 1.- Suma\n");
+	double Multiplicacion (double , double );
 
-	printf("\t\t Elija su Opci¢n:");
+	printf("\t\t Elija su Opción:");
 	scanf("%d", &Opcion);
 	switch (Opcion)
 	{
@@ -42,9 +43,13 @@ int main()
 		   resultado = Suma (a, b);
 	   break;
 
+	   case 3:
+	   	resultado = Multiplicacion (a, b);
+	   break;
+
 	   }
 
-  printf("\n El resultado de la opci¢n elegida es: %lf", resultado);
+  printf("\n El resultado de la opción elegida es: %lf", resultado);
   getchar();
   getchar();
   return 0;
