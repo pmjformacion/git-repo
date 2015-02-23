@@ -29,11 +29,13 @@ int main()
 
 	double Suma (double , double );
 	double Multiplicacion (double , double );
+	double Division (double , double );
 
     clrscr();
 	printf("\t\tCALCULADORA\n\n");
 	printf("\t 1.- Suma\n");
-	double Multiplicacion (double , double );
+	printf("\t 3.- Multplicaci¢n\n");
+	printf("\t 4.- Division\n");
 
 	printf("\t\t Elija su Opción:");
 	scanf("%d", &Opcion);
@@ -46,6 +48,10 @@ int main()
 	   case 3:
 	   	resultado = Multiplicacion (a, b);
 	   break;
+
+	   case 4:
+	   	resultado = Division (a, b);
+       break;
 
 	   }
 
