@@ -96,6 +96,7 @@ double Resta (double a, double b)
     printf("\n introduzca el segundo restando:");
     scanf("%lf", &b);
     c = (a-b);
+
 double Multiplicacion (double a, double b)
 {
 	 double c;
@@ -104,5 +105,16 @@ double Multiplicacion (double a, double b)
     printf("\n introduzca el multiplicador:");
     scanf("%lf", &b);
     c = a * b;
+    return (c);
+}
+
+double Division (double a, double b)
+{
+	 double c;
+    printf("\n introduzca el primer dividendo:");
+    scanf("%lf", &a);
+    printf("\n introduzca el segundo dividendo:");
+    scanf("%lf", &b);
+    c = a / b;
     return (c);
 }
