@@ -29,14 +29,14 @@ int main()
 
 	double Suma (double , double );
 	double Resta (double , double );
-
-
+	double Multiplicacion (double , double );
+	double Division (double , double );
     clrscr();
 	printf("\t\tCALCULADORA\n\n");
 	printf("\t 1.- Suma\n");
 	printf("\t 2.- Resta\n");
-
-
+	printf("\t 3.- Multplicaci¢n\n");
+	printf("\t 4.- Division\n");
 	printf("\t\t Elija su Opción:");
 	scanf("%d", &Opcion);
 	switch (Opcion)
@@ -48,6 +48,14 @@ int main()
   	   case 2:
 	   	resultado = Resta (a, b);
 	   break;
+
+	   case 3:
+	   	resultado = Multiplicacion (a, b);
+	   break;
+
+	   case 4:
+	   	resultado = Division (a, b);
+       break;
 
 	   }
 
@@ -88,5 +96,13 @@ double Resta (double a, double b)
     printf("\n introduzca el segundo restando:");
     scanf("%lf", &b);
     c = (a-b);
+double Multiplicacion (double a, double b)
+{
+	 double c;
+    printf("\n introduzca el primer multiplicando:");
+    scanf("%lf", &a);
+    printf("\n introduzca el multiplicador:");
+    scanf("%lf", &b);
+    c = a * b;
     return (c);
 }
